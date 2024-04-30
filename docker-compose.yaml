@@ -41,6 +41,7 @@ services:
   app:
     container_name: work-container
     build: .
+    #image: yeokyungwon/springapp:b90d769d3e6fa6fe9e25d2c09a4592dbd39981b3
     depends_on:
       - database
     ports:
