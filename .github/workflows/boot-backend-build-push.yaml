@@ -3,4 +3,12 @@ name: Java with Gradle
 on:
     push:
         branches: [main]
-        
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Source Checkout
+          users: actions/checkout@v2
+
